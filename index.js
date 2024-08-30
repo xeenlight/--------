@@ -1,12 +1,9 @@
 let addButton = document.querySelector(".add-product");
 let productList = document.querySelector(".products-list");
 let clearButton = document.querySelector(".clear-list");
-
 addButton.addEventListener("click", addProduct);
 clearButton.addEventListener("click", clearProductList);
-
 let productArray = [];
-
 function addProduct(){
     let productType = document.querySelector("#type-select").value;
     let productName = document.querySelector("#product-name").value;
@@ -47,8 +44,7 @@ function renderProductList() {
     });
     productList.innerHTML = productString;
 }
-
 function clearProductList(){
     productArray = [];
     renderProductList();
-}  
+}
