@@ -51,4 +51,4 @@ function renderProductList() {
 function clearProductList(){
     productArray = [];
     renderProductList();
-}
+}  
